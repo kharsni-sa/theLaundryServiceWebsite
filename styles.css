@@ -1,0 +1,407 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+.hero{
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.left{
+    flex-basis: 40%;
+}
+
+.right{
+    flex-basis: 30%;
+}
+
+.left h2{
+    color: #343a40;
+    font-size: 2.5rem;
+}
+
+.left p{
+    color: #adb5bd;
+    margin-top: 10px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.list{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+.item{
+    font-size: 1rem;
+    color: #343a40;
+}
+
+.list a {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #007BFF; 
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.list a:hover::after {
+  transform: scaleX(1);
+}
+
+
+.username{
+    font-weight: bold;
+    color: #00a6fb;
+    border: none;
+    background-color: #d6e2e9;
+    border-radius: 15px;
+    padding: 15px;
+
+}
+
+.button{
+    background-color: #00a6fb;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 20px;
+    font-weight: 550;
+
+}
+
+.service-overview{
+    width: 100%;
+    height: 6.5rem;
+    background-color: #00a6fb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.achievement{
+    margin: 1rem;
+}
+
+.achievement h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.achievement p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.booking-services{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: #f9f9f9;
+
+}
+
+.left-booking, .right-booking{
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    margin: 20px;
+
+}
+
+#empty-cart-msg {
+  text-align: center;
+  margin-top: 2rem;
+  color: #444;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.booking-services h1{
+    font-size: 2rem;
+
+}
+
+.info{
+    font-size: 1.2rem;
+    color: #495057;
+    margin-bottom: 1rem;
+}
+
+#services{
+    margin-top: 1rem;
+}
+
+.service {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+}
+
+.service-name {
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.add-info{
+    margin-top: 1rem;
+    color:blue;
+}
+
+/* .buttons button {
+    margin-left: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+} */
+
+.toggle-btn{
+    margin-left: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-btn {
+    background-color: #0077cc;
+    color: white;
+    border: 1px solid darkblue;
+}
+
+.remove-btn {
+    background-color: #f7a399;
+    border: 1px solid red;
+}
+
+.cart {
+      margin-bottom: 1rem;
+    }
+
+.cart-item {
+      margin-bottom: 0.5rem;
+}
+
+.cart h2{
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.total {
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.form-section h2{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+#booking-form input {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#booking-form button {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+    background-color: #4B5CFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.confirmation {
+    margin-top: 1rem;
+    color: green;
+    font-weight: 500;
+}
+
+.quality-description{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.quality{
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 15px;
+}
+
+.quality h3{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 0.4rem;
+
+}
+
+.quality p{
+    font-size: 0.95rem;
+    color: #333;
+
+}
+
+.quality-icon{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.newsletter-subscription{
+    background-color: #00a6fb;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+    margin: 40px 0;
+    
+}
+
+.newsletter-subscription h2{
+    font-size: 2.3rem;
+    color: white;
+}
+
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.input-row {
+  display: flex;
+  gap: 16px;
+}
+
+
+.subscription-form input {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 240px;
+  background-color: rgba(255, 255, 255, 0.2); /* translucent white */
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4); /* subtle border */
+}
+
+.subscription-form input::placeholder {
+  color: white;
+  opacity: 0.8; /* optional for softer white */
+}
+
+
+.subscription-form button {
+  background-color: white;
+  color: #00a6fb;
+  padding: 12px 0;
+  width: 240px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  height: 100%;
+}
+
+.footer{
+    padding: 2rem 1rem 1rem;
+    margin-top: 5rem;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+}
+
+.footer-section h4{
+    margin-bottom: 1rem;
+}
+
+.footer-section ul{
+    list-style-type: none;
+}
+
+.footer-section ul li{
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a{
+    color: black;
+    text-decoration: none;
+}
+
+.social-links{
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
